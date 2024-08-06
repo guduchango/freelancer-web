@@ -3,12 +3,37 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test', function(){
-    return view('home');
-});
+Route::get('/about-me', function(){
+    \Illuminate\Support\Facades\App::setLocale('es');
+    return view('custom/pages/about_me');
+})->name('about-me');
+
+Route::get('/education', function(){
+    $educations = config('web_content')['education'];
+    return view('custom/pages/education',compact('educations'));
+})->name('education');
+
+Route::get('/projects', function(){
+    return view('custom/pages/projects');
+})->name('projects');
+
+Route::get('/experience', function(){
+    $experiences = config('web_content')['experience'];
+    return view('custom/pages/experience',$experiences);
+})->name('experience');
+
+Route::get('/clients', function(){
+    return view('custom/pages/clients');
+})->name('clients');
+
+Route::get('/clicap', function(){
+    Illuminate\Support\Facades\App::setLocale('es');
+    return view('custom/pages/sites/clicap');
+})->name('clicap');
 
 Route::get('/', function () {
-    return view('welcome');
+    \Illuminate\Support\Facades\App::setLocale('es');
+    return view('custom/pages/about_me');
 });
 
 Route::get('/dashboard', function () {
