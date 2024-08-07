@@ -5,7 +5,7 @@
         <div class="section-wrapper">
             <h2>{{__('Challenges to improve my skills')}}</h2>
             <div class="proyect-boxes boxes-color">
-                @foreach($projects as $item)
+                @foreach($content as $item)
                     <div class="proyectBoxes-box">
                         <div class="proyectBoxesBox-header">
                             <div class="proyectBoxesBoxHeader-title">

@@ -6,7 +6,7 @@
     <div class="section-wrapper">
         <h2>{{__('Experience')}}</h2>
         <div class="experience-boxes boxes-color">
-            @foreach($experiences as $item)
+            @foreach($content as $item)
             <div class="experienceBoxes-box">
                 <span>{{$item['year']}}</span>
                 <p>{{__($item['title'])}}</p>

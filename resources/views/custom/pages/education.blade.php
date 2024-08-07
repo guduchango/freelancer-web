@@ -6,7 +6,7 @@
     <div class="section-wrapper">
         <h2>{{__('Education')}}</h2>
         <div class="education-boxes boxes-color">
-            @foreach($educations as $item)
+            @foreach($content as $item)
                 <div class="educationBoxes-box">
                     <span>{{$item['year']}}</span>
                     <div class="educationBoxesBox-icon">

@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="{{gasset('/css/custom.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{gasset('/images/favicon/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{gasset('/images/favicon/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{gasset('/images/favicon/favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{gasset('/images/favicon/favicon-16x16.png')}}">
     <title>@yield('title', 'Edgardo Ponce - About Me')</title>
     <meta property="og:title" content="Edgardo Ponce personal website"/>
     <meta property="og:type" content="website"/>
     <meta property="og:description" content="My personal website with experience, education, works, projects"/>
-    <meta property="og:url" content="https://edgardoponce.com/"/>
-    <meta property="og:image" content="https://edgardoponce.com/images/chango.jpeg"/>
+    <meta property="og:url" content="{{url('/')}}" />
+    <meta property="og:image" content="{{gasset('/images/chango.jpeg')}}" />
 </head>
 
 <body>
@@ -56,7 +56,7 @@
         <main>
             <div class="main-wrapper">
                 <a href="/" aria-current="page">
-                    <img src="./images/chango.jpeg" width="256" height="256" og:image
+                    <img src="{{gasset('/images/chango.jpeg')}}" width="256" height="256" og:image
                          alt="Foto edgardo ponce">
                 </a>
                 <h1>Edgardo Ponce</h1>
@@ -157,7 +157,7 @@
         <p>{{__('This website and its content are protected by intellectual property laws. Any reproduction, distribution, or modification of the content without prior authorization is prohibited.')}}</p>
     </footer>
 </div>
-<script src="/js/custom.js"></script>
+<script src="{{gasset('/js/custom.js')}}"></script>
 </body>
 
 </html>
