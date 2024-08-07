@@ -46,9 +46,9 @@
                         <i class="icon-rocket" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav-box" title="projects">
+                <div class="nav-box" title="challenges">
                     <a id="projectsHomeIcon-btn" href="{{url('projects')}}">
-                        <i class="icon-laptop" aria-hidden="true"></i>
+                        <i class="icon-fire" aria-hidden="true"></i>
                     </a>
                 </div>
             </nav>
@@ -143,8 +143,8 @@
                 </div>
                 <div class="menuWrapper-box">
                     <a id="btn-projects" href="{{url('projects')}}">
-                        <i class="icon-laptop"></i>
-                        {{__('Projects')}}
+                        <i class="icon-fire"></i>
+                        {{__('Challenges')}}
                     </a>
                 </div>
             </div>
