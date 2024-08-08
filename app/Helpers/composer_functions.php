@@ -24,6 +24,11 @@ function gasset(string $path, bool $http = false): string
     return asset('public/' . $path);
 }
 
+function langUrl(string $url): string {
+
+    return url(session('lang')."/".$url);
+}
+
 /**
  * @param string $value1
  * @param string $value2

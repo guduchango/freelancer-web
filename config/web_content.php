@@ -10,31 +10,31 @@ return [
         ],
         [
             'year' => '2024',
-            'url' => './files/certificates/curso-esencial-de-html-y-css.pdf',
+            'url' => '/files/certificates/curso-esencial-de-html-y-css.pdf',
             'title' => 'Essential Course HTML & CSS',
             'place' => 'leonidasesteban.com',
         ],
         [
             'year' => '2024',
-            'url' => './files/certificates/curso-de-css-grid-layout-e-interfaces.pdf',
+            'url' => '/files/certificates/curso-de-css-grid-layout-e-interfaces.pdf',
             'title' => 'CSS Course Grid Layout and Interfaces',
             'place' => 'leonidasesteban.com',
         ],
         [
             'year' => '2024',
-            'url' => './files/certificates/diploma-tailwind.pdf',
+            'url' => '/files/certificates/diploma-tailwind.pdf',
             'title' => 'Tailwind Css',
             'place' => 'platzi.com',
         ],
         [
             'year' => '2024',
-            'url' => './files/certificates/diploma-react-vite-tailwindcss.pdf',
+            'url' => '/files/certificates/diploma-react-vite-tailwindcss.pdf',
             'title' => 'React.js with Vite.js and Tailwind Css',
             'place' => 'platzi.com',
         ],
         [
             'year' => '2024',
-            'url' => './files/certificates/diploma-react-typescript.pdf',
+            'url' => '/files/certificates/diploma-react-typescript.pdf',
             'title' => 'React.js with typescript',
             'place' => 'platzi.com',
         ],
@@ -151,7 +151,7 @@ return [
             'title' => '2024 - Shopping store',
             'url_live' => 'https://simple-store-vite-react-tailwind.edgardoponce.com/',
             'url_github' => 'https://github.com/guduchango/platzi-vite-react-tailwind',
-            'url_image' => './images/projects/platzi-vite-react-tailwind.png',
+            'url_image' => '/images/projects/platzi-vite-react-tailwind.png',
             'items' => [
                 'React.js',
                 'Tailwind Css',
@@ -164,7 +164,7 @@ return [
             'title' => '2024 - Simple blog example',
             'url_live' => 'https://leonidas-html-y-css-essential.edgardoponce.com/',
             'url_github' => 'https://github.com/guduchango/leonidas-html-css-essential',
-            'url_image' => './images/projects/leonidas-html-css-essential.png',
+            'url_image' => '/images/projects/leonidas-html-css-essential.png',
             'items' => [
                 'Basic CSS concepts',
                 'Semantic optimization',
@@ -177,7 +177,7 @@ return [
             'title' => '2024 - Google calendar CSS grid',
             'url_live' => 'https://leonidas-css-grid-layout-interfaces.edgardoponce.com/calendar/index.html',
             'url_github' => 'https://github.com/guduchango/leonidas-css-grid-layout-interfaces',
-            'url_image' => './images/projects/leonidas-css-grid-layout-interfaces.png',
+            'url_image' => '/images/projects/leonidas-css-grid-layout-interfaces.png',
             'items' => [
                 'Layout using CSS Grid',
                 'Dark mode example',
@@ -189,7 +189,7 @@ return [
             'title' => '2024 - Awesome travel site',
             'url_live' => 'https://travel-vite-tailwind-react.edgardoponce.com/',
             'url_github' => 'https://github.com/guduchango/platzi-travel-tailwind-reactjs',
-            'url_image' => './images/projects/travel-vite-tailwind-react.png',
+            'url_image' => '/images/projects/travel-vite-tailwind-react.png',
             'items' => [
                 'Tailwind CSS',
                 'Mobile first, utility first',
@@ -201,7 +201,7 @@ return [
             'title' => '2024 - Fox example gallery',
             'url_live' => 'https://fox-nextjs-typescript-tailwind.edgardoponce.com/',
             'url_github' => 'https://github.com/guduchango/platzi-travel-tailwind-reactjs',
-            'url_image' => './images/projects/fox-nextjs-typescript-tailwind.png',
+            'url_image' => '/images/projects/fox-nextjs-typescript-tailwind.png',
             'items' => [
                 'Next.js',
                 'Typescript',
@@ -213,7 +213,7 @@ return [
             'title' => '2024 - Survey magnament',
             'url_live' => 'https://frontend-survey-laravel-react-vite-tailwind.edgardoponce.com/',
             'url_github' => 'https://github.com/guduchango/survey-laravel-react-vite-tailwind',
-            'url_image' => './images/projects/frontend-survey-laravel-react-vite-tailwind.png',
+            'url_image' => '/images/projects/frontend-survey-laravel-react-vite-tailwind.png',
             'items' => [
                 'React.js (frontend)',
                 'Laravel (backend)',
@@ -227,7 +227,7 @@ return [
             'title' => '2024 - My personal web only HTML/CSS',
             'url_live' => 'https://personal-web-presentation.edgardoponce.com/',
             'url_github' => 'https://github.com/guduchango/guduchango',
-            'url_image' => './images/projects/my-personal-web.png',
+            'url_image' => '/images/projects/my-personal-web.png',
             'items' => [
                 'CSS Grid',
                 'Layouts',

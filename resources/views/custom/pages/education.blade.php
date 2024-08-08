@@ -10,7 +10,7 @@
                 <div class="educationBoxes-box">
                     <span>{{$item['year']}}</span>
                     <div class="educationBoxesBox-icon">
-                        <a href="{{$item['url']}}" class="icon-download2"></a>
+                        <a href="{{gasset($item['url'])}}" class="icon-download2"></a>
                         <p>{{__($item['title'])}}</p>
                     </div>
                     <span>{{__($item['place'])}}</span>

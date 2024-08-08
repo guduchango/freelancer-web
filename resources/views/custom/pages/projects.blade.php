@@ -23,7 +23,7 @@
                         </div>
                         <div class="proyectBoxesBox-info">
                             <a target="_blank" href="{{$item['url_image']}}">
-                                <img src="{{$item['url_image']}}" height="200" width="200"
+                                <img src="{{gasset($item['url_image'])}}" height="200" width="200"
                                      alt="">
                             </a>
                             <ul>

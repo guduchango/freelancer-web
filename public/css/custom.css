@@ -70,11 +70,11 @@ nav {
     padding-block: 16px;
     padding-inline: 16px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     background-color: var(--gray10);
     transition: 0s background-color;
-    inline-size: 25px;
-    block-size: 30px;
+    inline-size: 15px;
+    block-size: 20px;
     border-radius: 16px;
     justify-content: center;
     text-align: center;

@@ -2,12 +2,23 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\WebController;
+use \App\Http\Middleware\LanguageMiddleware;
+
+
+Route::get('/', [\App\Http\Controllers\WebController::class, 'home']);
+
+Route::get('/languaje/{lang}', [\App\Http\Controllers\WebController::class, 'languaje']);
 
 Route::get('/{languaje}/{section}',
-    [\App\Http\Controllers\WebController::class, 'index']);
+    [WebController::class, 'index'])
+    ->name('web');
 
-Route::get('/about-me', function () {
-    \Illuminate\Support\Facades\App::setLocale('pt');
+
+
+//Route::get('/geolocation', [WebController::class, 'show']);
+
+/*Route::get('/about-me', function () {
     return view('custom/pages/about_me');
 })->name('about-me');
 
@@ -42,7 +53,7 @@ Route::get('/clicap', function () {
 Route::get('/', function () {
     \Illuminate\Support\Facades\App::setLocale('pt');
     return view('custom/pages/about_me');
-});
+});*/
 
 Route::get('/dashboard', function () {
     return view('dashboard');

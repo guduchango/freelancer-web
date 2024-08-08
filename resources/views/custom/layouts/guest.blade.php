@@ -118,31 +118,31 @@
         <div class="menu">
             <div class="menu-wrapper">
                 <div class="menuWrapper-box">
-                    <a id="btn-about-me" href="{{url('about-me')}}">
+                    <a id="btn-about-me" href="{{langUrl('about_me')}}">
                         <i class="icon-home"></i>
                         {{__('Home')}}
                     </a>
                 </div>
                 <div class="menuWrapper-box">
-                    <a id="btn-experience" href="{{url('experience')}}">
+                    <a id="btn-experience" href="{{langUrl('experience')}}">
                         <i class="icon-file-text"></i>
                         {{__('Experience')}}
                     </a>
                 </div>
                 <div class="menuWrapper-box">
-                    <a id="btn-education" href="{{url('education')}}">
+                    <a id="btn-education" href="{{langUrl('education')}}">
                         <i class="icon-shield"></i>
                         {{__('Education')}}
                     </a>
                 </div>
                 <div class="menuWrapper-box">
-                    <a id="btn-education" href="{{url('clients')}}">
+                    <a id="btn-education" href="{{langUrl('clients')}}">
                         <i class="icon-rocket"></i>
                         {{__('Clients')}}
                     </a>
                 </div>
                 <div class="menuWrapper-box">
-                    <a id="btn-projects" href="{{url('projects')}}">
+                    <a id="btn-projects" href="{{langUrl('projects')}}">
                         <i class="icon-fire"></i>
                         {{__('Challenges')}}
                     </a>

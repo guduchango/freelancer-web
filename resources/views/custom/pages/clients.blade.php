@@ -28,7 +28,7 @@
                             <p>{{ __('Software to manage the process of presentation, correction and approval of research papers, which are evaluated by different professionals.') }}</p>
                             <p class="clientBoxesBoxInfoDescription-title">{{__('Objetives')}}</p>
                             <p>{{__('Automate and streamline the process of presentation, correction and approval, which was previously done manually, using emails and excel.')}}</p>
-                            <a href="{{url('clicap')}}">{{__('Show more')}} >></a>
+                            <a href="{{langUrl('client_clicap')}}">{{__('Show more')}} >></a>
                         </div>
                     </div>
                 </div>
