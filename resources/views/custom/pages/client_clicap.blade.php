@@ -34,7 +34,7 @@
                         <li>{{__('SMTP: Email management for notification')}}</li>
                     </ul>
                 </ul>
-                <h2>{{__('Funcionalidades y Módulos')}}</h2>
+                <h2>{{__('Functionalities and Modules')}}</h2>
                 <ul>
                     <li>{{__('Presentation page')}}</li>
                     <ul>

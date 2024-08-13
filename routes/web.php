@@ -8,9 +8,9 @@ use \App\Http\Middleware\LanguageMiddleware;
 
 Route::get('/', [\App\Http\Controllers\WebController::class, 'home']);
 
-Route::get('/languaje/{lang}', [\App\Http\Controllers\WebController::class, 'languaje']);
+Route::get('/language/{lang}', [\App\Http\Controllers\WebController::class, 'language']);
 
-Route::get('/{languaje}/{section}',
+Route::get('/{language}/{section}',
     [WebController::class, 'index'])
     ->name('web');
 

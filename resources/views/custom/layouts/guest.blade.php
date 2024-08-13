@@ -24,42 +24,61 @@
 <body>
 <div class="layout">
     <div class="layout-wrapper">
+        <div id="overlay" class="overlay"></div>
+        <div id="popup" class="popup">
+            <h3>{{__('Language')}}</h3>
+            <div class="popup-links">
+                <a href="{{url('/language/en')}}">EN</a>
+                <a href="{{url('/language/es')}}">ES</a>
+                <a href="{{url('/language/pt')}}">PT</a>
+{{--                <a href="{{url('/language/de')}}">DE</a>
+                <a href="{{url('/language/fr')}}">FR</a>--}}
+            </div>
+
+            {{--<button id="closePopup">Close</button>--}}
+        </div>
         <header class="header">
             <nav>
                 <div class="nav-box" title="home">
-                    <a id="mobileHomeIcon-btn" href="{{url('about-me')}}">
+                    <a id="mobileHomeIcon-btn" href="{{langUrl('about_me')}}">
                         <i class="icon-home" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav-box" title="experience">
-                    <a id="experienceHomeIcon-btn" href="{{url('experience')}}">
-                        <i class="icon-file-text" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="nav-box" title="education">
-                    <a id="educationHomeIcon-btn" href="{{url('education')}}">
-                        <i class="icon-shield" aria-hidden="true"></i>
-                    </a>
-                </div>
                 <div class="nav-box" title="works">
-                    <a id="projectsHomeIcon-btn" href="{{url('clients')}}">
+                    <a id="projectsHomeIcon-btn" href="{{langUrl('clients')}}">
                         <i class="icon-rocket" aria-hidden="true"></i>
                     </a>
                 </div>
+                <div class="nav-box" title="experience">
+                    <a id="experienceHomeIcon-btn" href="{{langUrl('experience')}}">
+                        <i class="icon-file-text" aria-hidden="true"></i>
+                    </a>
+                </div>
                 <div class="nav-box" title="challenges">
-                    <a id="projectsHomeIcon-btn" href="{{url('projects')}}">
+                    <a id="projectsHomeIcon-btn" href="{{langUrl('projects')}}">
                         <i class="icon-fire" aria-hidden="true"></i>
                     </a>
                 </div>
+                <div class="nav-box" title="education">
+                    <a id="educationHomeIcon-btn" href="{{langUrl('education')}}">
+                        <i class="icon-shield" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="nav-lang" title="lenguage">
+                    <a  id="openPopup" href="#">
+                        <span>{{strtoupper(session('lang'))}}</span>
+                    </a>
+                </div>
+
             </nav>
         </header>
         <main>
             <div class="main-wrapper">
                 <a href="/" aria-current="page">
-                    <img src="{{gasset('/images/chango.jpeg')}}" width="256" height="256" og:image
-                         alt="Foto edgardo ponce">
+                    <img src="{{gasset('/images/chango.jpeg')}}" width="256" height="256"
+                         alt="Foto edgardo ponce" property="og:image">
                 </a>
-                <h1>Edgardo Ponce</h1>
+                <h1>Edgardo Poncee</h1>
                 <h2>Full Stack Developer</h2>
                 <div class="mainWrapper-socialIcons" aria-labelledby="social networks">
                     <a target="_blank"
@@ -80,7 +99,7 @@
                         </div>
                         <div class="mainWrapperPersonalInfoItem-text">
                             <p>{{__('Phone')}}</p>
-                            <p>2604558293</p>
+                            <p>+54 9 260 484-5139</p>
                         </div>
                     </div>
                     <div class="mainWrapperPersonalInfo-item">
@@ -98,16 +117,7 @@
                         </div>
                         <div class="mainWrapperPersonalInfoItem-text">
                             <p>{{__('Email')}}</p>
-                            <p>ed.poncepaez@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="mainWrapperPersonalInfo-item">
-                        <div class="mainWrapperPersonalInfoItem-icon">
-                            <i class="icon-calendar"></i>
-                        </div>
-                        <div class="mainWrapperPersonalInfoItem-text">
-                            <p>{{__('Birthday')}}</p>
-                            <p>July 19, 1987</p>
+                            <p>hello@edgardoponce.com </p>
                         </div>
                     </div>
                 </div>
@@ -124,9 +134,21 @@
                     </a>
                 </div>
                 <div class="menuWrapper-box">
+                    <a id="btn-education" href="{{langUrl('clients')}}">
+                        <i class="icon-rocket"></i>
+                        {{__('Clients')}}
+                    </a>
+                </div>
+                <div class="menuWrapper-box">
                     <a id="btn-experience" href="{{langUrl('experience')}}">
                         <i class="icon-file-text"></i>
                         {{__('Experience')}}
+                    </a>
+                </div>
+                <div class="menuWrapper-box">
+                    <a id="btn-projects" href="{{langUrl('projects')}}">
+                        <i class="icon-fire"></i>
+                        {{__('Challenges')}}
                     </a>
                 </div>
                 <div class="menuWrapper-box">
@@ -135,16 +157,9 @@
                         {{__('Education')}}
                     </a>
                 </div>
-                <div class="menuWrapper-box">
-                    <a id="btn-education" href="{{langUrl('clients')}}">
-                        <i class="icon-rocket"></i>
-                        {{__('Clients')}}
-                    </a>
-                </div>
-                <div class="menuWrapper-box">
-                    <a id="btn-projects" href="{{langUrl('projects')}}">
-                        <i class="icon-fire"></i>
-                        {{__('Challenges')}}
+                <div class="menuWrapper-lang">
+                    <a id="openPopupDesktop" href="#">
+                        {{strtoupper(session('lang'))}}
                     </a>
                 </div>
             </div>

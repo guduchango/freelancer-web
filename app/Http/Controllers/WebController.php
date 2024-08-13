@@ -25,26 +25,26 @@ class WebController extends Controller
          * argentina 190.120.245.56
          * alemania
          */
-        $ip ='190.120.245.56'; //$request->ip();
+        $ip = $request->ip();
         $location = $this->geoLocationService->getGeoLocation($ip);
         $countryCode = $location['countryCode']??"";
-        $languaje = $this->getLanguageByCountryCode($countryCode);
-        $request->session()->put('lang', $languaje);
-        return redirect("/$languaje/about_me");
+        $language = $this->getLanguageByCountryCode($countryCode);
+        $request->session()->put('lang', $language);
+        return redirect("/$language/about_me");
     }
 
     public function index(Request $request)
     {
         $route = $request->getRequestUri();
         $array = explode('/',$route);
-        $languaje = $array[1]??"en";
-        $section = $array[2]??"about-me";
-        App::setLocale($languaje);
+        $language = $array[1]??"en";
+        $section = $array[2]??"about_me";
+        App::setLocale($language);
         $content = config('web_content')[$section]??[];
         return view("custom/pages/$section", compact('content'));
     }
 
-    public function languaje(Request $request,$lang)
+    public function language(Request $request,$lang)
     {
         $request->session()->put('lang', $lang);
         App::setLocale($lang);
