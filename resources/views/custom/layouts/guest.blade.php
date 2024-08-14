@@ -39,32 +39,32 @@
         </div>
         <header class="header">
             <nav>
-                <div class="nav-box" title="home">
+                <div class="nav-box" title="home" id="boxMob-about_me">
                     <a id="mobileHomeIcon-btn" href="{{langUrl('about_me')}}">
                         <i class="icon-home" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav-box" title="works">
+                <div class="nav-box" title="clients" id="boxMob-clients">
                     <a id="projectsHomeIcon-btn" href="{{langUrl('clients')}}">
                         <i class="icon-rocket" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav-box" title="experience">
+                <div class="nav-box" title="experience" id="boxMob-experience">
                     <a id="experienceHomeIcon-btn" href="{{langUrl('experience')}}">
                         <i class="icon-file-text" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav-box" title="challenges">
+                <div class="nav-box" title="challenges" id="boxMob-projects">
                     <a id="projectsHomeIcon-btn" href="{{langUrl('projects')}}">
                         <i class="icon-fire" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav-box" title="education">
+                <div class="nav-box" title="education" id="boxMob-education">
                     <a id="educationHomeIcon-btn" href="{{langUrl('education')}}">
                         <i class="icon-shield" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav-lang" title="lenguage">
+                <div class="nav-lang" title="lenguage" >
                     <a  id="openPopup" href="#">
                         <span>{{strtoupper(session('lang'))}}</span>
                     </a>
@@ -78,7 +78,7 @@
                     <img src="{{gasset('/images/chango.jpeg')}}" width="256" height="256"
                          alt="Foto edgardo ponce" property="og:image">
                 </a>
-                <h1>Edgardo Poncee</h1>
+                <h1>Edgardo Ponce</h1>
                 <h2>Full Stack Developer</h2>
                 <div class="mainWrapper-socialIcons" aria-labelledby="social networks">
                     <a target="_blank"
@@ -127,31 +127,31 @@
 
         <div class="menu">
             <div class="menu-wrapper">
-                <div class="menuWrapper-box">
+                <div class="menuWrapper-box" id="boxDesk-about_me">
                     <a id="btn-about-me" href="{{langUrl('about_me')}}">
                         <i class="icon-home"></i>
                         {{__('Home')}}
                     </a>
                 </div>
-                <div class="menuWrapper-box">
+                <div class="menuWrapper-box" id="boxDesk-clients">
                     <a id="btn-education" href="{{langUrl('clients')}}">
                         <i class="icon-rocket"></i>
                         {{__('Clients')}}
                     </a>
                 </div>
-                <div class="menuWrapper-box">
+                <div class="menuWrapper-box" id="boxDesk-experience">
                     <a id="btn-experience" href="{{langUrl('experience')}}">
                         <i class="icon-file-text"></i>
                         {{__('Experience')}}
                     </a>
                 </div>
-                <div class="menuWrapper-box">
+                <div class="menuWrapper-box" id="boxDesk-projects">
                     <a id="btn-projects" href="{{langUrl('projects')}}">
                         <i class="icon-fire"></i>
                         {{__('Challenges')}}
                     </a>
                 </div>
-                <div class="menuWrapper-box">
+                <div class="menuWrapper-box" id="boxDesk-education">
                     <a id="btn-education" href="{{langUrl('education')}}">
                         <i class="icon-shield"></i>
                         {{__('Education')}}
@@ -168,11 +168,13 @@
 
     </div>
     <footer>
-        <p>{{__('© 2024 Edgardo Ponce. All rights reserved.')}}</p>
+        <p>© {{date('Y')}} Edgardo Ponce. {{__('All rights reserved.')}}</p>
         <p>{{__('This website and its content are protected by intellectual property laws. Any reproduction, distribution, or modification of the content without prior authorization is prohibited.')}}</p>
     </footer>
 </div>
+<input type="hidden" id="section" value="{{$section}}">
 <script src="{{gasset('/js/custom.js')}}"></script>
+
 </body>
 
 </html>

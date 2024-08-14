@@ -41,7 +41,7 @@ class WebController extends Controller
         $section = $array[2]??"about_me";
         App::setLocale($language);
         $content = config('web_content')[$section]??[];
-        return view("custom/pages/$section", compact('content'));
+        return view("custom/pages/$section", compact('content','section'));
     }
 
     public function language(Request $request,$lang)
@@ -90,6 +90,22 @@ class WebController extends Controller
         ];
 
         return $languages[$countryCode] ?? 'en';
+    }
+
+    private function validSection(): array {
+        return [
+          'about_me' => 'about_me',
+          'client_clicap' => 'clients',
+          'client_geoplexo' => 'clients',
+          'clients' => 'clients',
+          'education' => 'education',
+          'experience' => 'experience',
+          'projects' => 'projects',
+        ];
+    }
+
+    private function menuSelected(string $section){
+
     }
 
 

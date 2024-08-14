@@ -24,7 +24,6 @@
     --font-color9: #dda10c;
     --font-color10: #3e32ee;
     --font-color11: #0A66C2;
-
     --hover: rgb(250, 176, 196);
 }
 
@@ -496,6 +495,7 @@ section h2 {
     background: var(--hover);
 }
 
+
 .educationBoxes-box span {
     font-weight: 300;
     font-style: italic;
@@ -773,6 +773,10 @@ footer {
 
 }
 
+.menuActive {
+    background: var(--hover);
+}
+
 @media screen and (max-width: 900px) {
     .menu {
         display: none;
@@ -858,6 +862,10 @@ footer {
     .menuWrapper-box:hover {
         background: rgb(250, 176, 196);
         transition-delay: 0.1s;
+    }
+
+    .menuActive {
+        background: var(--hover);
     }
 
     .menu-wrapper a {
