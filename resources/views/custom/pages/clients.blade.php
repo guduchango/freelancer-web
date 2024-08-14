@@ -59,6 +59,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="clientBoxes-box">
+                    <div class="clientBoxesBox-header">
+                        <div class="clientBoxesBoxHeader-title">
+                            <h3>{{__('Custom Booking - Lodging management system')}}</h3>
+                        </div>
+                        <div class="clientBoxesBoxHeader-links">
+                            <a target="_blank" href="{{langUrl('client_booking')}}">
+                                <i class="icon-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clientBoxesBox-info">
+                        <div class="clientBoxesBoxInfo-image">
+                            <a target="_blank" href="{{gasset("/images/client_projects/booking_system/booking_1.png")}}">
+                                <img src="{{gasset("/images/client_projects/booking_system/booking_1.png")}}" height="200" width="200"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="clientBoxesBoxInfo-description">
+                            <p class="clientBoxesBoxInfoDescription-title">{{__('Description')}}</p>
+                            <p>{{ __('The lodging management system is a comprehensive solution that allows property owners and managers to efficiently manage their bookings, pricing, and associated expenses. With advanced features such as synchronization with Google Calendar, booking validation, and automatic price calculations with discounts, this system ensures a hassle-free experience for both hosts and guests. Additionally, it enables users to check the availability of lodgings and get detailed quotes without needing to log in or directly contact the hosts.') }}</p>
+                            <p class="clientBoxesBoxInfoDescription-title">{{__('Objetives')}}</p>
+                            <p>{{__('Automate booking management: Streamline the process of recording and tracking bookings, ensuring efficient management of lodging calendars.')}}</p>
+                            <a href="{{langUrl('client_booking')}}">{{__('Show more')}} >></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="clientBoxes-shortInfo">
                     <h3>SISCAT</h3>
                     <p>{{__('Pre/post operation document management system for patients undergoing cataract surgery, managing patients, documents, images, appointments, modification history, users, among other things. Developed for the company Instituto Dr. Mercado')}}</p>

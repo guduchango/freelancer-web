@@ -1,7 +1,7 @@
 @extends('custom.layouts.guest')
 @section('title', 'Edgardo Ponce - Truck magnament')
 @section('content')
-    <section id="client-projects" aria-labelledby="about me">
+    <section id="client-projects" aria-labelledby="truck magnament">
         <div class="section-wrapper">
             <div class="client-projects">
                 <h1>{{__('Truck management - System to manage truck transportation.')}}</h1>

@@ -1,7 +1,7 @@
 @extends('custom.layouts.guest')
 @section('title', 'Edgardo Ponce - Clicap')
 @section('content')
-    <section id="client-projects" aria-labelledby="about me">
+    <section id="client-projects" aria-labelledby="clicap">
         <div class="section-wrapper">
             <div class="client-projects">
                 <h1>CLICAP - {{__('Management of research papers for events')}}</h1>
