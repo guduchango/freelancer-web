@@ -6,6 +6,9 @@ use \App\Http\Controllers\WebController;
 use \App\Http\Middleware\LanguageMiddleware;
 
 
+
+
+
 Route::get('/', [\App\Http\Controllers\WebController::class, 'home']);
 
 Route::get('/language/{lang}', [\App\Http\Controllers\WebController::class, 'language']);

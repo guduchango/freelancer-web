@@ -8,6 +8,33 @@
                 <div class="clientBoxes-box">
                     <div class="clientBoxesBox-header">
                         <div class="clientBoxesBoxHeader-title">
+                            <h3>{{__('Update Booking - Lodging management system')}}</h3>
+                        </div>
+                        <div class="clientBoxesBoxHeader-links">
+                            <a target="_blank" href="{{langUrl('client_booking_update')}}">
+                                <i class="icon-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clientBoxesBox-info">
+                        <div class="clientBoxesBoxInfo-image">
+                            <a target="_blank" href="{{url('/')."/images/client_projects/booking_update_system/booking_update_1.png"}}">
+                                <img src="{{url('/')."/images/client_projects/booking_update_system/booking_update_1.png"}}" height="200" width="200"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="clientBoxesBoxInfo-description">
+                            <p class="clientBoxesBoxInfoDescription-title">{{__('Description')}}</p>
+                            <p>{{ __('The lodging management system has been updated to provide a smoother and more accessible user experience. Built with React.js for a dynamic user interface, Dexie DB for offline support, and a custom calendar for reservation management, this system is optimized for user convenience. On the server side, it uses Laravel for robust data management and Sanctum for secure authentication. Additionally, the interface design is mobile-first, ensuring an optimal user experience on mobile devices.') }}</p>
+                            <p class="clientBoxesBoxInfoDescription-title">{{__('Objetives')}}</p>
+                            <p>{{__('Enhanced user experience: Provide a more intuitive and easy-to-use interface, adaptable to mobile devices, to improve the user’s interaction with the system.')}}</p>
+                            <a href="{{langUrl('client_booking_update')}}">{{__('Show more')}} >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientBoxes-box">
+                    <div class="clientBoxesBox-header">
+                        <div class="clientBoxesBoxHeader-title">
                             <h3>CLICAP - {{__('Management of research papers for events')}}</h3>
                         </div>
                         <div class="clientBoxesBoxHeader-links">
@@ -96,7 +123,7 @@
                 </div>
                 <div class="clientBoxes-shortInfo">
                     <h3>TOTORAS</h3>
-                    <p>{{__('System for loan management, made for the company TOTORAS.SA in conjunction with the software factory, installment calculations, refinancing, interpretation of txt bank nation.')}}</p>
+                    <p>{{__('System for loan management, made for the company TOTORAS.SA installment calculations, refinancing, interpretation of txt bank nation.')}}</p>
                 </div>
                 <div class="clientBoxes-shortInfo">
                     <h3>POANES</h3>

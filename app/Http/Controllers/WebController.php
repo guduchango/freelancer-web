@@ -28,7 +28,7 @@ class WebController extends Controller
         $ip = $request->ip();
         $location = $this->geoLocationService->getGeoLocation($ip);
         $countryCode = $location['countryCode']??"";
-        $language = $this->getLanguageByCountryCode($countryCode);
+        $language = $this->getLanguageByCountryCode($countryCode)??"en";
         $request->session()->put('lang', $language);
         return redirect("/$language/about_me");
     }
@@ -41,7 +41,7 @@ class WebController extends Controller
         $section = $array[2]??"about_me";
         App::setLocale($language);
         $content = config('web_content')[$section]??[];
-        return view("custom/pages/$section", compact('content','section'));
+        return view("custom/pages/$section", compact('content','section','language'));
     }
 
     public function language(Request $request,$lang)

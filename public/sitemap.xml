@@ -49,6 +49,18 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://edgardoponce.com/en/client_booking</loc>
+        <lastmod>2024-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://edgardoponce.com/en/client_booking_update</loc>
+        <lastmod>2024-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://edgardoponce.com/es/about_me</loc>
         <lastmod>2024-08-12</lastmod>
         <changefreq>monthly</changefreq>
@@ -91,6 +103,18 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://edgardoponce.com/es/client_booking</loc>
+        <lastmod>2024-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://edgardoponce.com/es/client_booking_update</loc>
+        <lastmod>2024-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://edgardoponce.com/pt/about_me</loc>
         <lastmod>2024-08-12</lastmod>
         <changefreq>monthly</changefreq>
@@ -129,6 +153,18 @@
     <url>
         <loc>https://edgardoponce.com/pt/client_geoplexo</loc>
         <lastmod>2024-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://edgardoponce.com/pt/client_booking</loc>
+        <lastmod>2024-08-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://edgardoponce.com/pt/client_booking_update</loc>
+        <lastmod>2024-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

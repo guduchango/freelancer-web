@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{gasset('/css/custom.css')}}">
@@ -29,9 +28,9 @@
         <div id="popup" class="popup">
             <h3>{{__('Language')}}</h3>
             <div class="popup-links">
-                <a href="{{url('/language/en')}}">EN</a>
-                <a href="{{url('/language/es')}}">ES</a>
-                <a href="{{url('/language/pt')}}">PT</a>
+                <a title="change language english" href="{{url('/language/en')}}">EN</a>
+                <a title="change language spanish" href="{{url('/language/es')}}">ES</a>
+                <a title="change language portuguese" href="{{url('/language/pt')}}">PT</a>
 {{--                <a href="{{url('/language/de')}}">DE</a>
                 <a href="{{url('/language/fr')}}">FR</a>--}}
             </div>
@@ -67,7 +66,7 @@
                 </div>
                 <div class="nav-lang" title="lenguage" >
                     <a  id="openPopup" href="#">
-                        <span>{{strtoupper(session('lang'))}}</span>
+                        <span>{{strtoupper($language)}}</span>
                     </a>
                 </div>
 
@@ -160,7 +159,7 @@
                 </div>
                 <div class="menuWrapper-lang">
                     <a id="openPopupDesktop" href="#">
-                        {{strtoupper(session('lang'))}}
+                        {{strtoupper($language)}}
                     </a>
                 </div>
             </div>
