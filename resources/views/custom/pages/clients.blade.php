@@ -1,9 +1,15 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - '.__('Real Clients'))
+@section('header_meta')
+    <meta property="og:title" content="{{__('Satisfied Clients Who Trust Our Digital Services')}}"/>
+    <meta property="og:description" content="{{__("We proudly collaborate with a diverse range of clients, providing customized digital solutions that drive their businesses to success. Here are some of the projects we've accomplished together.")}}"/>
+    <meta property="og:url" content="{{langUrl('clients')}}" />
+    <meta property="og:image" content="{{gasset("/images/clients.png")}}" />
+@endsection
+@section('title', __('Satisfied Clients Who Trust Our Digital Services'))
 @section('content')
-    <section id="projects" aria-labelledby="{{__('Real Clients')}}">
+    <section id="projects">
         <div class="section-wrapper">
-            <h2>{{__('Customized projects for clients')}}</h2>
+            <h1>{{__('Satisfied Clients Who Trust Our Digital Services')}}</h1>
             <div class="client-boxes boxes-color">
                 <div class="clientBoxes-box">
                     <div class="clientBoxesBox-header">

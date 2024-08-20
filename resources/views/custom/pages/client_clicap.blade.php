@@ -1,10 +1,16 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - '.__('Management of research papers for events'))
+@section('header_meta')
+    <meta property="og:title" content="{{__('Clicap: Management system of research papers for events')}}"/>
+    <meta property="og:description" content="{{__('Software to manage the process of presentation, correction and approval of research papers, which are evaluated by different professionals.')}}"/>
+    <meta property="og:url" content="{{langUrl('client_clicap')}}" />
+    <meta property="og:image" content="{{gasset("/images/client_projects/clicap_system/clicap_1.png")}}" />
+@endsection
+@section('title', __('Clicap: Management system of research papers for events'))
 @section('content')
-    <section id="client-projects" aria-labelledby="{{__('Management of research papers for events')}}">
+    <section id="client-projects">
         <div class="section-wrapper">
             <div class="client-projects">
-                <h1>CLICAP - {{__('Management of research papers for events')}}</h1>
+                <h1>{{__('Clicap: Management system of research papers for events')}}</h1>
                 <h2>{{ __('Software description') }}</h2>
                 <p>{{ __('Software to manage the process of presentation, correction and approval of research papers, which are evaluated by different professionals.') }}</p>
                 <p>{{ __('Create certificates of approval and attendance to the event where they are exposed and manage payments of attendees.') }}</p>

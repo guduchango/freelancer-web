@@ -1,10 +1,15 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - Education')
+@section('header_meta')
+    <meta property="og:title" content="{{__('My Educational Background and Professional Certifications')}}"/>
+    <meta property="og:description" content="{{__("I’ve earned various certifications and completed courses that highlight my expertise in web development. Here are the key achievements in my educational journey.")}}"/>
+    <meta property="og:url" content="{{langUrl('education')}}" />
+    <meta property="og:image" content="{{gasset("/images/education.jpeg")}}" />
+@endsection
+@section('title', __('My Educational Background and Professional Certifications'))
 @section('content')
-
-<section id="education" aria-labelledby="{{__('Education')}}">
+<section id="education">
     <div class="section-wrapper">
-        <h2>{{__('Education')}}</h2>
+        <h1>{{__('My Educational Background and Professional Certifications')}}</h1>
         <div class="education-boxes boxes-color">
             @foreach($content as $item)
                 <div class="educationBoxes-box">
@@ -19,5 +24,4 @@
         </div>
     </div>
 </section>
-
 @endsection

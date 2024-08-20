@@ -13,12 +13,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{gasset('/images/favicon/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{gasset('/images/favicon/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{gasset('/images/favicon/favicon-16x16.png')}}">
-    <title>@yield('title', 'Edgardo Ponce - About Me')</title>
-    <meta property="og:title" content="Edgardo Ponce personal website"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:description" content="My personal website with experience, education, works, projects"/>
-    <meta property="og:url" content="{{url('/')}}" />
-    <meta property="og:image" content="{{gasset('/images/chango.jpeg')}}" />
+    <title>@yield('title', 'Edgardo Ponce - About Me')</title>
+    @yield('header_meta')
 </head>
 
 <body>

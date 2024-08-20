@@ -1,10 +1,16 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - '.__('Update Booking'))
+@section('header_meta')
+    <meta property="og:title" content="{{__('Update of custom Booking: The lodging management system')}}"/>
+    <meta property="og:description" content="{{__('Update of the lodging management system is a comprehensive solution that allows property owners and managers to efficiently manage their bookings')}}"/>
+    <meta property="og:url" content="{{langUrl('client_booking_update')}}" />
+    <meta property="og:image" content="{{gasset("/images/client_projects/booking_update_system/booking_update_1.png")}}" />
+@endsection
+@section('title', __('Update of custom booking: The lodging management system'))
 @section('content')
-    <section id="client-projects" aria-labelledby="{{__('Update Booking')}}">
+    <section id="client-projects">
         <div class="section-wrapper">
             <div class="client-projects">
-                <h1>{{__('Update - Lodging management system')}}</h1>
+                <h1>{{__('Update of custom booking: The lodging management system')}}</h1>
                 <h2>{{ __('Software description') }}</h2>
                 <p>{{ __('The lodging management system has been updated to provide a smoother and more accessible user experience. Built with React.js for a dynamic user interface, Dexie DB for offline support, and a custom calendar for reservation management, this system is optimized for user convenience. On the server side, it uses Laravel for robust data management and Sanctum for secure authentication. Additionally, the interface design is mobile-first, ensuring an optimal user experience on mobile devices.') }}</p>
                 <h2>{{__('Objectives of the software')}}</h2>

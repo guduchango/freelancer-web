@@ -1,10 +1,16 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - '.__('Experience'))
+@section('header_meta')
+    <meta property="og:title" content="{{__('Professional Experience and Career in Notable Companies and Projects')}}"/>
+    <meta property="og:description" content="{{__("I’ve worked in various roles that have strengthened my expertise in web development and technology.")}}"/>
+    <meta property="og:url" content="{{langUrl('experience')}}" />
+    <meta property="og:image" content="{{gasset("/images/experience.png")}}" />
+@endsection
+@section('title', __('Professional Experience and Career in Notable Companies and Projects'))
 @section('content')
 
-<section id="experience" aria-labelledby="{{__('Experience')}}">
+<section id="experience">
     <div class="section-wrapper">
-        <h2>{{__('Experience')}}</h2>
+        <h1>{{__('Professional Experience and Career in Notable Companies and Projects')}}</h1>
         <div class="experience-boxes boxes-color">
             @foreach($content as $item)
             <div class="experienceBoxes-box">

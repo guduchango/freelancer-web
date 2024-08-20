@@ -1,7 +1,13 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - '.__('Custom Booking'))
+@section('header_meta')
+    <meta property="og:title" content="{{__('Custom Booking: The lodging management system')}}"/>
+    <meta property="og:description" content="{{__('The lodging management system is a comprehensive solution that allows property owners and managers to efficiently manage their bookings')}}"/>
+    <meta property="og:url" content="{{langUrl('client_booking')}}" />
+    <meta property="og:image" content="{{gasset("/images/client_projects/booking_system/booking_1.png")}}" />
+@endsection
+@section('title', __('Custom Booking: The lodging management system'))
 @section('content')
-    <section id="client-projects" aria-labelledby="{{__('Custom Booking')}}">
+    <section id="client-projects">
         <div class="section-wrapper">
             <div class="client-projects">
                 <h1>{{__('Custom Booking - Lodging management system')}}</h1>

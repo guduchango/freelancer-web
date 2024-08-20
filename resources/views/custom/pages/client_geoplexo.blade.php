@@ -1,10 +1,16 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - '.__('Truck magnament'))
+@section('header_meta')
+    <meta property="og:title" content="{{__('Truck management: System to manage truck transportation')}}"/>
+    <meta property="og:description" content="{{__('This software is a solution designed for transportation companies that need to manage multiple aspects of their logistics operation.')}}"/>
+    <meta property="og:url" content="{{langUrl('client_geoplexo')}}" />
+    <meta property="og:image" content="{{gasset("/images/client_projects/geoplexo_system/geoplexo_1.png")}}" />
+@endsection
+@section('title', __('Truck management: System to manage truck transportation'))
 @section('content')
-    <section id="client-projects" aria-labelledby="{{__('Truck magnament')}}">
+    <section id="client-projects">
         <div class="section-wrapper">
             <div class="client-projects">
-                <h1>{{__('Truck management - System to manage truck transportation.')}}</h1>
+                <h1>{{__('Truck management: System to manage truck transportation')}}</h1>
                 <h2>{{ __('Software description') }}</h2>
                 <p>{{ __('This software is a solution designed for transportation companies that need to manage multiple aspects of their logistics operation. It provides tools for truck and driver assignment, load order management, route tracking, and monitoring of critical alerts related to truck documentation (such as insurance and technical revisions).') }}</p>
                 <p>{{ __('The software also includes a financial management module that allows you to record and control the cash movements associated with each operation, including different types of payments and their respective status.') }}</p>
