@@ -1,8 +1,8 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - Experience')
+@section('title', 'Edgardo Ponce - '.__('Experience'))
 @section('content')
 
-<section id="experience" aria-labelledby="experience">
+<section id="experience" aria-labelledby="{{__('Experience')}}">
     <div class="section-wrapper">
         <h2>{{__('Experience')}}</h2>
         <div class="experience-boxes boxes-color">

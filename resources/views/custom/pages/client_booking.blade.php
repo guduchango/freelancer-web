@@ -1,7 +1,7 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - Custom Booking')
+@section('title', 'Edgardo Ponce - '.__('Custom Booking'))
 @section('content')
-    <section id="client-projects" aria-labelledby="custom booking">
+    <section id="client-projects" aria-labelledby="{{__('Custom Booking')}}">
         <div class="section-wrapper">
             <div class="client-projects">
                 <h1>{{__('Custom Booking - Lodging management system')}}</h1>

@@ -1,7 +1,7 @@
 @extends('custom.layouts.guest')
-@section('title', 'Edgardo Ponce - Clicap')
+@section('title', 'Edgardo Ponce - '.__('Management of research papers for events'))
 @section('content')
-    <section id="client-projects" aria-labelledby="clicap">
+    <section id="client-projects" aria-labelledby="{{__('Management of research papers for events')}}">
         <div class="section-wrapper">
             <div class="client-projects">
                 <h1>CLICAP - {{__('Management of research papers for events')}}</h1>

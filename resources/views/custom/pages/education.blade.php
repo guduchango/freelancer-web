@@ -2,7 +2,7 @@
 @section('title', 'Edgardo Ponce - Education')
 @section('content')
 
-<section id="education" aria-labelledby="education">
+<section id="education" aria-labelledby="{{__('Education')}}">
     <div class="section-wrapper">
         <h2>{{__('Education')}}</h2>
         <div class="education-boxes boxes-color">
