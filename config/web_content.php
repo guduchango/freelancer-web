@@ -3,10 +3,34 @@
 return [
     'education' => [
         [
-            'year' => '2019 - 2020',
-            'url' => '#',
-            'title' => 'Senior Programming Technician',
-            'place' => 'National Technological University'
+            'year' => '2024',
+            'url' => '/files/certificates/diploma-react-typescript.pdf',
+            'title' => 'React.js with typescript',
+            'place' => 'platzi.com',
+        ],
+        [
+            'year' => '2024',
+            'url' => '/files/certificates/diploma-react-vite-tailwindcss.pdf',
+            'title' => 'React.js with Vite.js and Tailwind Css',
+            'place' => 'platzi.com',
+        ],
+        [
+            'year' => '2024',
+            'url' => '/files/certificates/diploma-tailwind.pdf',
+            'title' => 'Tailwind Css',
+            'place' => 'platzi.com',
+        ],
+        [
+            'year' => '2024',
+            'url' => '/files/certificates/diploma-notion.pdf',
+            'title' => 'Practical Notion Course',
+            'place' => 'platzi.com',
+        ],
+        [
+            'year' => '2024',
+            'url' => '/files/certificates/diploma-ingleschatgpt.pdf',
+            'title' => 'Practical English Course with ChatGPT',
+            'place' => 'platzi.com',
         ],
         [
             'year' => '2024',
@@ -21,22 +45,10 @@ return [
             'place' => 'leonidasesteban.com',
         ],
         [
-            'year' => '2024',
-            'url' => '/files/certificates/diploma-tailwind.pdf',
-            'title' => 'Tailwind Css',
-            'place' => 'platzi.com',
-        ],
-        [
-            'year' => '2024',
-            'url' => '/files/certificates/diploma-react-vite-tailwindcss.pdf',
-            'title' => 'React.js with Vite.js and Tailwind Css',
-            'place' => 'platzi.com',
-        ],
-        [
-            'year' => '2024',
-            'url' => '/files/certificates/diploma-react-typescript.pdf',
-            'title' => 'React.js with typescript',
-            'place' => 'platzi.com',
+            'year' => '2019 - 2020',
+            'url' => '#',
+            'title' => 'Senior Programming Technician',
+            'place' => 'National Technological University'
         ],
     ],
     'experience' => [
