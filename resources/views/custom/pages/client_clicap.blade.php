@@ -2,6 +2,7 @@
 @section('header_meta')
     <meta property="og:title" content="{{__('Clicap: Management system of research papers for events')}}"/>
     <meta property="og:description" content="{{__('Software to manage the process of presentation, correction and approval of research papers, which are evaluated by different professionals.')}}"/>
+    <meta name='description' content="{{__('Software to manage the process of presentation, correction and approval of research papers, which are evaluated by different professionals.')}}">.
     <meta property="og:url" content="{{langUrl('client_clicap')}}" />
     <meta property="og:image" content="{{gasset("/images/client_projects/clicap_system/clicap_1.png")}}" />
 @endsection

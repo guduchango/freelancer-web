@@ -2,6 +2,7 @@
 @section('header_meta')
     <meta property="og:title" content="{{__('Satisfied Clients Who Trust Our Digital Services')}}"/>
     <meta property="og:description" content="{{__("We proudly collaborate with a diverse range of clients, providing customized digital solutions that drive their businesses to success. Here are some of the projects we've accomplished together.")}}"/>
+    <meta name='description' content="{{__("We proudly collaborate with a diverse range of clients, providing customized digital solutions that drive their businesses to success. Here are some of the projects we've accomplished together.")}}">.
     <meta property="og:url" content="{{langUrl('clients')}}" />
     <meta property="og:image" content="{{gasset("/images/clients.png")}}" />
 @endsection
@@ -26,7 +27,7 @@
                         <div class="clientBoxesBoxInfo-image">
                             <a target="_blank" href="{{url('/')."/images/client_projects/booking_update_system/booking_update_1.png"}}">
                                 <img src="{{url('/')."/images/client_projects/booking_update_system/booking_update_1.png"}}" height="200" width="200"
-                                     alt="">
+                                     alt="{{__('Update of custom booking: The lodging management system')}}">
                             </a>
                         </div>
                         <div class="clientBoxesBoxInfo-description">
@@ -39,21 +40,19 @@
                     </div>
                 </div>
                 <div class="clientBoxes-box">
-                    <div class="clientBoxesBox-header">
-                        <div class="clientBoxesBoxHeader-title">
-                            <h3>CLICAP - {{__('Management of research papers for events')}}</h3>
-                        </div>
-                        <div class="clientBoxesBoxHeader-links">
-                            <a target="_blank" href="{{langUrl('client_clicap')}}">
-                                <i class="icon-link"></i>
-                            </a>
-                        </div>
+                    <div class="clientBoxesBoxHeader-title">
+                        <h3>CLICAP - {{__('Management of research papers for events')}}</h3>
+                    </div>
+                    <div class="clientBoxesBoxHeader-links">
+                        <a target="_blank" href="{{langUrl('client_clicap')}}">
+                            <i class="icon-link"></i>
+                        </a>
                     </div>
                     <div class="clientBoxesBox-info">
                         <div class="clientBoxesBoxInfo-image">
                             <a target="_blank" href="{{url('/')."/images/client_projects/clicap_system/clicap_1.png"}}">
                                 <img src="{{url('/')."/images/client_projects/clicap_system/clicap_1.png"}}" height="200" width="200"
-                                     alt="">
+                                     alt="{{__('Clicap: Management system of research papers for events')}}">
                             </a>
                         </div>
                         <div class="clientBoxesBoxInfo-description">
@@ -80,7 +79,7 @@
                         <div class="clientBoxesBoxInfo-image">
                             <a target="_blank" href="{{gasset("/images/client_projects/geoplexo_system/geoplexo_1.png")}}">
                                 <img src="{{gasset("/images/client_projects/geoplexo_system/geoplexo_1.png")}}" height="200" width="200"
-                                     alt="">
+                                     alt="{{__('Truck management: System to manage truck transportation')}}">
                             </a>
                         </div>
                         <div class="clientBoxesBoxInfo-description">
@@ -107,7 +106,7 @@
                         <div class="clientBoxesBoxInfo-image">
                             <a target="_blank" href="{{gasset("/images/client_projects/booking_system/booking_1.png")}}">
                                 <img src="{{gasset("/images/client_projects/booking_system/booking_1.png")}}" height="200" width="200"
-                                     alt="">
+                                     alt="{{__('Custom Booking: The lodging management system')}}">
                             </a>
                         </div>
                         <div class="clientBoxesBoxInfo-description">

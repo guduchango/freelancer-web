@@ -2,6 +2,7 @@
 @section('header_meta')
     <meta property="og:title" content="{{__('Custom Booking: The lodging management system')}}"/>
     <meta property="og:description" content="{{__('The lodging management system is a comprehensive solution that allows property owners and managers to efficiently manage their bookings')}}"/>
+    <meta name='description' content="{{__('The lodging management system is a comprehensive solution that allows property owners and managers to efficiently manage their bookings')}}">.
     <meta property="og:url" content="{{langUrl('client_booking')}}" />
     <meta property="og:image" content="{{gasset("/images/client_projects/booking_system/booking_1.png")}}" />
 @endsection

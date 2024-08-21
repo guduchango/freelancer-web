@@ -2,6 +2,7 @@
 @section('header_meta')
     <meta property="og:title" content="{{__('My Educational Background and Professional Certifications')}}"/>
     <meta property="og:description" content="{{__("I’ve earned various certifications and completed courses that highlight my expertise in web development. Here are the key achievements in my educational journey.")}}"/>
+    <meta name='description' content="{{__("I’ve earned various certifications and completed courses that highlight my expertise in web development. Here are the key achievements in my educational journey.")}}">.
     <meta property="og:url" content="{{langUrl('education')}}" />
     <meta property="og:image" content="{{gasset("/images/education.jpeg")}}" />
 @endsection

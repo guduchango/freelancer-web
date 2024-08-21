@@ -2,6 +2,7 @@
 @section('header_meta')
     <meta property="og:title" content="{{__('Edgardo Ponce Freelance Web Developer: Expert in Digital Solutions')}}"/>
     <meta property="og:description" content="{{__('Freelance Web Developer specializing in custom websites and digital solutions, delivering quality and innovation.')}}"/>
+    <meta name='description' content="{{__('Freelance Web Developer specializing in custom websites and digital solutions, delivering quality and innovation.')}}">.
     <meta property="og:url" content="{{langUrl('about_me')}}" />
     <meta property="og:image" content="{{gasset('/images/chango.jpeg')}}" />
 @endsection
@@ -10,7 +11,7 @@
     <section id="about-me">
         <div class="section-wrapper">
             <div class="aboutMe-info">
-                <h2>{{__('Freelance Web Development Services')}}</h2>
+                <h1>{{__('Freelance Web Development Services')}}</h1>
                 <p>{{__('I am a Full Stack developer with an innate passion for creating end-to-end technology solutions.')}}<p>
                 <p>{{__('With over 12 years of experience in software development, I have had the privilege of working on a variety of exciting and challenging projects.')}}</p>
                 <p>{{__('From designing elegant user interfaces to implementing robust backend systems, I have excelled in all aspects of the software development lifecycle.')}}</p>

@@ -75,8 +75,8 @@
                     <img src="{{gasset('/images/chango.jpeg')}}" width="256" height="256"
                          alt="Foto edgardo ponce" property="og:image">
                 </a>
-                <h1>Edgardo Ponce</h1>
-                <h2>Full Stack Developer</h2>
+                <h2>Edgardo Ponce</h2>
+                <h3>Full Stack Developer</h3>
                 <div class="mainWrapper-socialIcons" aria-labelledby="social networks">
                     <a target="_blank"
                        href="https://www.linkedin.com/in/edgardo-dami%C3%A1n-ponce-p%C3%A1ez-b9069470/">

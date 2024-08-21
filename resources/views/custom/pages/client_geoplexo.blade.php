@@ -2,6 +2,7 @@
 @section('header_meta')
     <meta property="og:title" content="{{__('Truck management: System to manage truck transportation')}}"/>
     <meta property="og:description" content="{{__('This software is a solution designed for transportation companies that need to manage multiple aspects of their logistics operation.')}}"/>
+    <meta name='description' content="{{__('This software is a solution designed for transportation companies that need to manage multiple aspects of their logistics operation.')}}">.
     <meta property="og:url" content="{{langUrl('client_geoplexo')}}" />
     <meta property="og:image" content="{{gasset("/images/client_projects/geoplexo_system/geoplexo_1.png")}}" />
 @endsection
