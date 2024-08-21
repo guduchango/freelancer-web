@@ -11,6 +11,7 @@
     <section id="projects">
         <div class="section-wrapper">
             <h1>{{__('Technical Challenges and Skill-Building Projects')}}</h1>
+            <h2>{{__("Here, I showcase projects I've undertaken to challenge myself and enhance my skills across various technologies.")}}</h2>
             <div class="proyect-boxes boxes-color">
                 @foreach($content as $item)
                     <div class="proyectBoxes-box">

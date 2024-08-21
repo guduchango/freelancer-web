@@ -12,6 +12,7 @@
 <section id="experience">
     <div class="section-wrapper">
         <h1>{{__('Professional Experience and Career in Notable Companies and Projects')}}</h1>
+        <h2>{{__("I’ve worked in various roles that have strengthened my expertise in web development and technology.")}}</h2>
         <div class="experience-boxes boxes-color">
             @foreach($content as $item)
             <div class="experienceBoxes-box">

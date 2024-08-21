@@ -1,7 +1,13 @@
 @import '../icons/icomoon/style.css';
 
 :root {
-    --h2: 600 1.625rem Poppins;
+    /*--h2: 600 1.625rem Poppins;*/
+    h1{
+        font-size:2em;
+    }
+    h2{
+        font-size:1.5em;
+    }
     --gray10: #F3F6F6;
     --gray20: #E3E3E3;
     --white: #FFFFFF;
@@ -199,14 +205,14 @@ main {
     padding-block-end: 24px;
 }
 
-.main-wrapper h1,
+/*.main-wrapper h1,
 h2 {
     font-weight: 300;
 }
 
 .main-wrapper h1 {
     font-weight: 600;
-}
+}*/
 
 .main-wrapper img {
     border-radius: 16px;
@@ -316,9 +322,9 @@ section {
     border-radius: 20px;
 }
 
-section h2 {
+/*section h2 {
     font-weight: 800;
-}
+}*/
 
 .section-wrapper {
     padding-inline: 24px;

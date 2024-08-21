@@ -11,6 +11,7 @@
 <section id="education">
     <div class="section-wrapper">
         <h1>{{__('My Educational Background and Professional Certifications')}}</h1>
+        <h2>{{__("I’ve earned various certifications and completed courses that highlight my expertise in web development. Here are the key achievements in my educational journey.")}}</h2>
         <div class="education-boxes boxes-color">
             @foreach($content as $item)
                 <div class="educationBoxes-box">
