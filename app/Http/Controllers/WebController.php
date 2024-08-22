@@ -17,27 +17,42 @@ class WebController extends Controller
 
     public function home(Request $request){
 
-        if($request->session()->exists('lang')){
+      /*  if($request->session()->exists('lang')){
             $lang = $request->session()->get('lang');
             return redirect("/$lang/about_me");
-        }
+        }*/
         /* brazil 177.192.255.38
          * argentina 190.120.245.56
          * alemania
          */
-        $ip = $request->ip();
+/*        $ip = $request->ip();
         $location = $this->geoLocationService->getGeoLocation($ip);
         $countryCode = $location['countryCode']??"";
         $language = $this->getLanguageByCountryCode($countryCode)??"en";
         $request->session()->put('lang', $language);
-        return redirect("/$language/about_me");
+        return redirect("/$language/about_me");*/
     }
 
     public function index(Request $request)
     {
+        $ip = $request->ip();
+        if(!$request->session()->exists($ip)){
+            $request->session()->put('ip', $ip);
+        }
+
         $route = $request->getRequestUri();
         $array = explode('/',$route);
-        $language = $array[1]??"en";
+
+        if($request->session()->exists('lang')) {
+            $language = $request->session()->get('lang');
+        }else{
+            $ip = $request->ip();
+            $location = $this->geoLocationService->getGeoLocation($ip);
+            $countryCode = $location['countryCode']??"";
+            $language = $this->getLanguageByCountryCode($countryCode)??"en";
+            $request->session()->put('lang', $language);
+        }
+
         $section = $array[2]??"about_me";
         App::setLocale($language);
         $content = config('web_content')[$section]??[];

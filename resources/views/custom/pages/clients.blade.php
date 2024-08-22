@@ -1,7 +1,7 @@
 @extends('custom.layouts.guest')
 @section('header_meta')
     <meta property="og:title" content="{{__('Satisfied Clients Who Trust Our Digital Services')}}"/>
-    <meta property="og:description" content="{{__("We proudly collaborate with a diverse range of clients, providing customized digital solutions that drive their businesses to success. Here are some of the projects we've accomplished together.")}}"/>
+    <meta property="og:description" content="{{__("We proudly collaborate with a diverse range of clients. Here are some of the projects we've accomplished together.")}}"/>
     <meta name='description' content="{{__("We proudly collaborate with a diverse range of clients. Here are some of the projects we've accomplished together.")}}">.
     <meta property="og:url" content="{{langUrl('clients')}}" />
     <meta property="og:image" content="{{gasset("/images/clients.png")}}" />
