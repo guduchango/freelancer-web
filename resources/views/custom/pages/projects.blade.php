@@ -2,7 +2,7 @@
 @section('header_meta')
     <meta property="og:title" content="{{__('Technical Challenges and Skill-Building Projects')}}"/>
     <meta property="og:description" content="{{__("Here, I showcase projects I've undertaken to challenge myself and enhance my skills across various technologies.")}}"/>
-    <meta name='description' content="{{__("Here, I showcase projects I've undertaken to challenge myself and enhance my skills across various technologies.")}}">.
+    <meta name='description' content="{{__("Here, I showcase projects I've undertaken to challenge myself and enhance my skills across various technologies.")}}" />
     <meta property="og:url" content="{{langUrl('education')}}" />
     <meta property="og:image" content="{{gasset("/images/challenges.png")}}" />
 @endsection

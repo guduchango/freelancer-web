@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{gasset('/css/custom.css')}}">
+    <link rel="stylesheet" href="{{gasset('/css/custom_v2.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,8 +14,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{gasset('/images/favicon/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{gasset('/images/favicon/favicon-16x16.png')}}">
     <meta property="og:type" content="website"/>
-    <title>@yield('title', 'Edgardo Ponce - About Me')</title>
     @yield('header_meta')
+    <title>@yield('title', 'Edgardo Ponce - About Me')</title>
+
 </head>
 
 <body>
@@ -170,7 +171,7 @@
     </footer>
 </div>
 <input type="hidden" id="section" value="{{$section}}">
-<script src="{{gasset('/js/custom.js')}}"></script>
+<script src="{{gasset('/js/custom_v1.js')}}"></script>
 
 </body>
 
